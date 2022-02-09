@@ -1,0 +1,12 @@
+type TransferEvent @entity {
+  id: ID!
+  from: Bytes!
+  to: Bytes!
+  amount: BigInt!
+}
+
+type TransferTransaction @entity {
+  id: ID!
+  block: BigInt!
+  sender: Bytes!
+}
