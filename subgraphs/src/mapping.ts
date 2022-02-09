@@ -4,7 +4,7 @@ import {
   Transfer,
   TransferCall
 } from "../generated/ExampleToken/ExampleToken"
-import { Transfer, TransferTransaction } from "../generated/schema"
+import { TransferEvent, TransferTransaction } from "../generated/schema"
 
 export function handleTransferEvent(event: Transfer): void {
   let entity = TransferEvent.load(event.transaction.hash.toHex())
