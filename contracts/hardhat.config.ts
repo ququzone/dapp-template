@@ -26,6 +26,11 @@ export default {
             url: `http://api.nightly-cluster-2.iotex.one:15014`,
             accounts,
         },
+        iotex_test: {
+            url: 'https://babel-api.testnet.iotex.io',
+            accounts: [`0x${process.env.PRIVATE_KEY}`],
+            chainId: 4690,
+        },
         coverage: {
             url: "http://127.0.0.1:8555",
         },

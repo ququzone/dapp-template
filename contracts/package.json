@@ -54,6 +54,7 @@
     "coverage": "npm run compile && npx hardhat coverage --temp artifacts --network coverage",
     "deploy:kovan": "hardhat --network kovan deploy",
     "deploy:nightly": "hardhat --network nightly deploy",
+    "deploy:iotex_test": "hardhat --network iotex_test deploy",
     "verify:kovan": "hardhat --network kovan etherscan-verify"
   },
   "dependencies": {
