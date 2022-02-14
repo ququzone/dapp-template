@@ -6,7 +6,9 @@ async function main() {
     const namedAccounts = await getNamedAccounts();
     const { deployer } = namedAccounts;
 
-    const recipient = deployer;
+    const recipient = '0xB5A2d7Bb89DE4bD62fB90E5d2f88438b8dB2C194';
+    const block = await ethers.provider.getBlockNumber()
+    console.log(`Transfer begin block: ${block}`)
 
     const executeResult = await execute('ExampleToken', {
         from: deployer,
